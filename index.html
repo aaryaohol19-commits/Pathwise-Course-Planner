@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pathwise | Smart Course Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="brand">
+            <div class="brand-icon">P</div>
+            <span>pathwise<span class="brand-dot">.</span></span>
+        </div>
+
+        <div class="nav-links">
+            <a href="#catalogue">Courses</a>
+            <a href="#learning-plan">Learning Plan</a>
+            <a href="#roadmap">Roadmap</a>
+            <a href="#progress">Progress</a>
+        </div>
+
+        <div class="nav-badge">✦ AI Powered</div>
+    </nav>
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <span class="hero-label">✦ YOUR PERSONAL LEARNING COMPANION</span>
+
+                <h1>Learn smarter.<br>
+                    <span>Grow faster.</span>
+                </h1>
+
+                <p>
+                    The right course. The right order. Your own learning journey.
+                    Let Pathwise help you discover what to learn next.
+                </p>
+
+                <a href="#catalogue" class="hero-button">Explore Courses →</a>
+            </div>
+
+            <div class="hero-visual">
+                <div class="orbit orbit-one"></div>
+                <div class="orbit orbit-two"></div>
+                <div class="hero-symbol">✦</div>
+
+                <div class="floating-card floating-top">
+                    <span>✧</span> Smart Learning
+                </div>
+
+                <div class="floating-card floating-bottom">
+                    <span>✓</span> Your Progress Matters
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Course Catalogue -->
+<section class="section-card" id="catalogue">
+
+    <div class="section-heading">
+        <div>
+            <span class="section-label">EXPLORE & DISCOVER</span>
+            <h2>Course Catalogue</h2>
+            <p>Explore courses and track your learning progress.</p>
+        </div>
+        <div class="heading-icon">▤</div>
+    </div>
+
+    <div class="catalogue-summary">
+        <span>✦ 30 Learning Courses</span>
+        <span>✓ Track Completed Courses</span>
+    </div>
+
+    <div id="courseList">
+        Loading courses...
+    </div>
+
+</section>
+        <!-- Learning Plan -->
+        <section class="section-card plan-section" id="learning-plan">
+
+            <div class="section-heading">
+                <div>
+                    <span class="section-label">PERSONALIZED FOR YOU</span>
+                    <h2>Build Your Learning Plan</h2>
+                    <p>Choose your goal and discover the prerequisites you need to complete first.</p>
+                </div>
+                <div class="heading-icon">✧</div>
+            </div>
+
+            <div class="plan-box">
+                <label for="targetCourse">What do you want to learn?</label>
+
+                <select id="targetCourse">
+                    <option value="">Select a course</option>
+                </select>
+
+                <button id="planButton">
+                    ✦ Generate My Plan
+                </button>
+            </div>
+
+            <div id="planResult"></div>
+
+        </section>
+
+        <!-- Complete Roadmap -->
+        <section class="section-card" id="roadmap">
+
+            <div class="section-heading">
+                <div>
+                    <span class="section-label">YOUR LEARNING PATH</span>
+                    <h2>Complete Learning Roadmap</h2>
+                    <p>Follow the recommended learning sequence, one step at a time.</p>
+                </div>
+                <div class="heading-icon">⌁</div>
+            </div>
+
+            <div class="roadmap-intro">
+                <span>✦</span>
+                <p>Start with the fundamentals and gradually move towards advanced concepts.</p>
+            </div>
+
+            <div id="roadmapList">
+                Loading roadmap...
+            </div>
+
+        </section>
+
+        <!-- Progress -->
+        <section class="section-card progress-section" id="progress">
+
+            <div class="section-heading">
+                <div>
+                    <span class="section-label">KEEP MOVING FORWARD</span>
+                    <h2>Your Learning Progress</h2>
+                    <p>Every completed course brings you one step closer to your goal.</p>
+                </div>
+                <div class="heading-icon">↗</div>
+            </div>
+
+            <div class="progress-info">
+                <p id="progressText">0% Completed</p>
+                <span>Keep it up!</span>
+            </div>
+
+            <div class="progress-container">
+                <div id="progressBar"></div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-brand">pathwise<span>.</span></div>
+        <p>Learn Smart. Learn in Order.</p>
+        <small>Smart Course Prerequisite Planner · Made for learners.</small>
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
